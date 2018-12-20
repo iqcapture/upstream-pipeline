@@ -6,5 +6,10 @@ pipeline {
         echo 'Build the project'
       }
     }
+    stage('Cleanup') {
+      steps {
+        echo 'Cleanup build stage'
+      }
+    }
   }
 }
