@@ -14,8 +14,9 @@ pipeline {
     }
     stage('Publish Event') {
       steps {
+        echo 'Publishing event: testingCompleted'
         script {
-          echo '--Publishing event goes here--'
+          publishEvent simpleEvent('testingCompleted')
         }
 
       }
