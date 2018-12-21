@@ -5,12 +5,12 @@ Destination for published pipelnes
 
     stage('Publish Event') {
       steps {
-          echo 'Publishing event: testingCompleted'
-          script {
-             // both options fail with No such DSL method 'simpleEvent' found, No such DSL method 'jsonEvent' found
-             //publishEvent simpleEvent('testingCompleted')
-             publishEvent jsonEvent('{"eventName":"testingCompleted"}')
-          }
+        echo 'Publishing event: testingCompleted'
+        script {
+           // both options fail with No such DSL method 'simpleEvent' found, No such DSL method 'jsonEvent' found
+           //publishEvent simpleEvent('testingCompleted')
+           publishEvent jsonEvent('{"eventName":"testingCompleted"}')
+        }
       }
     }
     
@@ -20,7 +20,7 @@ Destination for published pipelnes
     
     stage('Publish Event') {
       steps {
-          echo 'Publishing event: testingCompleted'
-          publishEvent simpleEvent('testingCompleted')
+        echo 'Publishing event: testingCompleted'
+        publishEvent simpleEvent('testingCompleted')
       }
     }
