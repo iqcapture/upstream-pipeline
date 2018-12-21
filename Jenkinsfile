@@ -12,14 +12,6 @@ pipeline {
         echo 'Tests Completed!'
       }
     }
-    stage('Publish Event') {
-      steps {
-        script {
-          publishEvent simpleEvent('testingCompleted')
-        }
-
-      }
-    }
     stage('Cleanup') {
       steps {
         echo 'Cleanup build stage'
