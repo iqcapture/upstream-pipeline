@@ -1,8 +1,8 @@
 # upstream-pipeline
 CloudBees Core trial walk-thru
 
-Destination for published pipelnes
-  see: https://go.cloudbees.com/docs/general/trial-guide/#_configuring_the_upstream_pipeline_to_publish_an_event
+Destination for published pipelnes  
+ see: https://go.cloudbees.com/docs/general/trial-guide/#_configuring_the_upstream_pipeline_to_publish_an_event
 
     stage('Publish Event') {
       steps {
