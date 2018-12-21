@@ -16,7 +16,7 @@ pipeline {
       steps {
         echo 'Publishing event: testingCompleted'
         script {
-          publishEvent simpleEvent('testingCompleted')
+          publishEvent jsonEvent('{"eventName":"testingCompleted"}')
         }
 
       }
