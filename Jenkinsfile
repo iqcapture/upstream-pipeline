@@ -15,10 +15,6 @@ pipeline {
     stage('Publish Event') {
       steps {
         echo 'Publishing event: testingCompleted'
-        script {
-          publishEvent jsonEvent('{"eventName":"testingCompleted"}')
-        }
-
       }
     }
     stage('Cleanup') {
