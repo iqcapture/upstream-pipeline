@@ -16,7 +16,7 @@ Destination for published pipelnes
     }
     
 -- or --  
-  ...but, cannot update in CloudBees Ops Center...  
+  Should work without wrapping in script{} block, but cannot update in CloudBees Ops Center...  
   see: https://go.cloudbees.com/docs/cloudbees-documentation/admin-cje/cross-team-collaboration/
     
     stage('Publish Event') {
