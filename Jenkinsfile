@@ -14,8 +14,8 @@ pipeline {
     }
     stage('Publish Event') {
       steps {
-        echo 'Publishing event: testingCompleted'
-        publishEvent simpleEvent('testingCompleted')
+        echo '(disabled) Publishing event: testingCompleted'
+        //publishEvent simpleEvent('testingCompleted')
       }
     }
     stage('Cleanup') {
